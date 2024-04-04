@@ -16,7 +16,7 @@ a {
     font-size: 18px;
 }
 
-/* CONTAINERS */
+/* BIG CONTAINERS */
 
 .header {
     display: flex;
@@ -27,20 +27,6 @@ a {
     padding: 10px;
 }
 
-.title0 {
-    color: #F9FAF8;
-    font-size: 24px;
-    margin-right: auto;
-}
-
-.rightlinks {
-    display: flex;
-    justify-content: flex-end;
-    width: 500px;
-    flex: initial;
-    gap: 20px;
-}
-
 .body1 {
     background-color: #1F2937;
     padding: 10px;
@@ -49,6 +35,8 @@ a {
     align-content: center;
     height: 400px;
     gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .body2 {
@@ -59,6 +47,47 @@ a {
     padding: 30px;
     gap: 30px;
 }
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    justify-content: center;
+    min-height: 300px;
+    flex: 1 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: royalblue;
+    margin: 100px 300px;
+    width: 720px;
+    height: 80px;
+    padding: 30px 30px;
+    color: #E5E7EB;
+    border-radius: 20px;
+}
+
+.footer {
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.header, .body1, .quote, .footer {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+/* SMALL CONTAINERS */
 
 .body1image {
     width: 600px;
@@ -79,6 +108,20 @@ a {
     align-items: flex-start;
 }
 
+.title0 {
+    color: #F9FAF8;
+    font-size: 24px;
+    margin-right: auto;
+}
+
+.rightlinks {
+    display: flex;
+    justify-content: flex-end;
+    width: 500px;
+    flex: initial;
+    gap: 20px;
+}
+
 .imagesTray {
     display: flex;
     justify-content: center;
@@ -92,11 +135,28 @@ a {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    gap: 10px;
 }
+
+.quotetext {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quotee {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1F2937;
+    align-self: flex-end;
+}
+
+/* STANDALONE ITEMS */
 
 .icon {
     height: 100px;
     width: 100px;
+    object-fit: cover;
 }
 
 .title1 {
@@ -116,7 +176,8 @@ button {
     text-align: center;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
+    height: 40px;
+    width: 100px;
     flex: none;
 }
 
@@ -124,8 +185,4 @@ button {
     color: #1F2937;
     font-weight: bolder;
     font-size: 36px;
-}
-.header, .body1 {
-    padding-left: 200px;
-    padding-right: 200px;
 }
